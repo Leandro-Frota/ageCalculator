@@ -1,0 +1,63 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 86%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    width:30rem ;
+    height: 40rem;
+    background-color:hsl(0, 0%, 100%);
+    margin-top: 8rem;
+    border-radius: 2rem 2rem 10rem 2rem;
+}
+
+.inputDatas{
+    display: flex;
+    flex-direction: row;
+    gap: .2rem;
+    width: 100%;
+    padding: 3rem 2rem;
+ 
+
+}
+label{
+    font-size: 1rem;
+    color: hsl(0, 1%, 44%);
+}
+
+input{
+    width: 90%;
+    height: 5rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: .5rem;
+}
+
+.inputDay, .inputMonth, .inputYear{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
