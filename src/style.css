@@ -112,8 +112,10 @@ input::-webkit-inner-spin-button {
 
 p{
     font-weight: 800;
-    font-size: 3rem;
-    transform: skewX(-10deg)
+    font-size: 4rem;
+    transform: skewX(-10deg);
+    height: 4.5rem;
+    
    
 }
 span{
