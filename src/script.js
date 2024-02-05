@@ -2,7 +2,9 @@ const inputDay = document.getElementById('day')
 const inputMonth = document.getElementById('month')
 const inputYear = document.getElementById('year')
 const buttonImage = document.getElementById('buttonImage')
-
+let resultYear = document.getElementById('resultYear')
+let resultMonth= document.getElementById('resultMonth')
+let resultDay= document.getElementById('resultDay')
 
 
 buttonImage.addEventListener('click',()=>{
@@ -23,6 +25,12 @@ buttonImage.addEventListener('click',()=>{
     let month = Math.floor((diffDay%365.25)/30.5)
     let day = Math.floor((diffDay%365.25)%30.5)
     console.log(diffDay,Year,month,day)
+    
+    resultYear.innerText = Year
+    resultMonth.innerText = month
+    resultDay.innerText = day
+
+
 
 })
 
