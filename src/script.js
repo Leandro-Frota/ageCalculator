@@ -81,6 +81,12 @@ buttonImage.addEventListener('click',()=>{
    }
 
 
+   if(dayBorn ==='' || monthBorn<0 || yearBorn==='' || yearBorn > yearNow){
+    
+    return
+
+   }else{
+
    let diffMilSec = now.getTime() - dataBorn.getTime() 
    let msPDay =  24 * 60 * 60 * 1000
    let diffDay = Math.floor( diffMilSec/msPDay)
@@ -93,7 +99,7 @@ buttonImage.addEventListener('click',()=>{
    resultMonth.innerText = month
    resultDay.innerText = day
 
-
+   }
 })
 
 
